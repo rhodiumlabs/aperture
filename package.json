@@ -1,0 +1,19 @@
+{
+  "name": "aonyx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "start-heroku": "npm run build && npm start",
+    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^1.1.0",
+    "react-track": "^0.4.3"
+  }
+}
