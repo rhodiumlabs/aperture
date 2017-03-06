@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "node server",
     "start-heroku": "npm run build && npm start",
     "dev": "node server",
     "lint": "standard './pages/*' './containers/*'",
@@ -24,6 +24,7 @@
     "babel-register": "^6.23.0",
     "lzbase62": "^1.4.6",
     "next": "^2.0.0-beta.36",
+    "next-routes": "^1.0.18",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-select": "^1.0.0-rc.3",
