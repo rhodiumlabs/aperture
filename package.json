@@ -7,13 +7,29 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "start-heroku": "npm run build && npm start",
-    "dev": "next",
+    "dev": "node server",
+    "lint": "standard './pages/*' './containers/*'",
+    "lint-fix": "standard --fix './pages/*' './containers/*'",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "**/node_modules/**"
+    ]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^1.1.0",
-    "react-track": "^0.4.3"
+    "babel-register": "^6.23.0",
+    "lzbase62": "^1.4.6",
+    "next": "^2.0.0-beta.36",
+    "react-select": "^1.0.0-rc.3",
+    "react-track": "^0.4.3",
+    "standard": "^9.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "snazzy": "^6.0.0"
   }
 }

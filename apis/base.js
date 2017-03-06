@@ -1,10 +1,7 @@
-
-
-const STATUS_GOOD = 'none';
-const STATUS_MINOR = 'minor';
-const STATUS_MAJOR = 'major';
-const STATUS_CRITICAL = 'critical';
-
+export const STATUS_GOOD = 'none'
+export const STATUS_MINOR = 'minor'
+export const STATUS_MAJOR = 'major'
+export const STATUS_CRITICAL = 'critical'
 
 export const API_LIST = [
   /*{
@@ -15,37 +12,37 @@ export const API_LIST = [
   {
     name: 'Twilio',
     shortcode: 'TW',
-    code: 'gpkpyklzq55q',
+    code: 'gpkpyklzq55q'
   },
   {
     name: 'GotoMeeting',
     shortcode: 'GM',
-    code: 'kwzln7bn4hg8',
+    code: 'kwzln7bn4hg8'
   },
   {
     name: 'Cisco WebEx',
-    shortcode: 'GM',
-    code: '1tp688sn2myf',
+    shortcode: 'CW',
+    code: '1tp688sn2myf'
   },
   {
     name: 'Hubspot ',
     shortcode: 'HS',
-    code: '8b9w1wwq3g7d',
+    code: '8b9w1wwq3g7d'
   },
   {
     name: 'CloudFlare',
     shortcode: 'CF',
-    code: 'yh6f0r4529hb',
-  }, 
+    code: 'yh6f0r4529hb'
+  },
   {
     name: 'MailGun',
     shortcode: 'MG',
-    code: '6jp439mdyy0k',
+    code: '6jp439mdyy0k'
   },
   {
     name: 'SendWithUs',
     shortcode: 'SW',
-    code: '202yx2sdrxr3',
+    code: '202yx2sdrxr3'
   },
   {
     name: 'Disqus',
@@ -66,6 +63,7 @@ export const API_LIST = [
     name: 'Box',
     shortcode: 'BX',
     code: '208q92hckwws'
+
   },
   {
     name: 'Dropbox',
@@ -81,5 +79,20 @@ export const API_LIST = [
     name: 'Lightspeed',
     shortcode: 'LS',
     code: 'vlmmyqh2vn20'
+  },
+  {
+    name: 'Pingdom',
+    shortcode: 'PD',
+    code: '71g81m9gdvs5'
+  },
+  {
+    name: 'IFTTT',
+    shortcode: 'IF',
+    code: 'b8h007xb5lsy'
+  },
+  {
+    name: 'Trello',
+    shortcode: 'TR',
+    code: 'h5frqhb041yq'
   }
-];
+]
