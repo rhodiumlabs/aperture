@@ -9,7 +9,7 @@ export default class extends React.Component {
         <meta charSet='utf-8' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css' />
-        <link rel='stylesheet' href='/static/font-awesome.min.css' />
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' />
         <link rel='stylesheet' href='/static/react-select.css' />
         <link rel='stylesheet' href='/static/base.css' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
