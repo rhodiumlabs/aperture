@@ -1,6 +1,57 @@
+div.main {
+  background-image: url('/static/bg-mixed.jpg');
+  background-size: cover;
+  background-position: 0px -100px;
+  text-align: center;
+  height: 100vh;
+}
+
+  div.main div.container {
+    padding-top: 7%;
+    max-width: 50%;
+  }
+
+  div.main .Select {
+    width: 500px;
+    margin: auto;
+  }
+
+  div.main .Select-control {
+    text-align: left;
+  }
+
+  div.main .Select-option {
+    text-align: left;
+  }
+
+  div.main .Select-input input {
+    padding-left: 20px;
+  }
+
+  div.main .custom-link {
+    position: absolute;
+  }
+
+  div.main h1 {
+    cursor: default;
+  }
+
+  div.main h4 {
+    cursor: default;
+  }
+
+  div.main p.description {
+    cursor: default;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+    div.main p.description em {
+      color: white;
+    }
+
 .mainpage {
   background-image: url('/static/bg.jpeg');
-  background-size: cover; 
+  background-size: cover;
   background-position: 0px -100px;
   text-align: center;
   height: 100vh;
@@ -22,10 +73,10 @@
 .mainpage .Select-input input {
   padding-left: 20px;
 }
-
 .mainpage .custom-link {
   position: absolute;
 }
+
 .api-selected i {
   float: right;
 }
