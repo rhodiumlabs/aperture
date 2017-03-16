@@ -10,7 +10,7 @@
     "lint": "standard './pages/*' './containers/*'",
     "lint-fix": "standard --fix './pages/*' './containers/*'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-prebuild": "npm run build"
+    "heroku-prebuild": "npm install && npm run build"
   },
   "standard": {
     "parser": "babel-eslint",
