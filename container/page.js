@@ -17,7 +17,17 @@ export default class extends React.Component {
       </Head>
       <main
         className={'wrapper ' + this.props.className}
-        style={{background: 'whitesmoke', minHeight: '100vh', color: '#333', fontFamily: 'Open Sans'}}>
+        style={{color: '#333', fontFamily: 'Open Sans'}}>
+        <style jsx>{`
+          main.wrapper {
+            background-attachment: fixed;
+            position: fixed;
+            overflow: scroll;
+            width: 100%;
+            height: 100%;
+          }
+        `}
+        </style>
         {this.props.children}
       </main>
     </div>

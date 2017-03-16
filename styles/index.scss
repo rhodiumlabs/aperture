@@ -1,0 +1,174 @@
+.container {
+  color: white;
+}
+main.wrapper {
+  background-image: url('/static/bg-mixed.jpg');
+}
+.link-copy {
+  width: auto;
+  background: rgba(255, 255, 255, 0.72);
+  color: #505967;
+  border: 0;
+  padding: 10px;
+}
+
+div.main {
+  background-size: fixed;
+  background-position: 0px -100px;
+  text-align: center;
+  height: 100vh;
+
+  div.container {
+    padding-top: 7%;
+    max-width: 50%;
+  }
+  .Select-menu-outer {
+    margin-top: 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0px 0px 15px #333;
+    .Select-option {
+      &:last-child {
+        border-bottom: 0;
+      }
+      padding-left: 20px;
+      border-bottom: 1px solid #EEE;
+      background: white;
+      text-align: left;
+      &.is-focused {
+        background: #f1f1f1 ;
+      }
+      i {
+        color: #CCC;
+        margin-right: 10px;
+      }
+    } 
+  }
+  .Select.is-focused .Select-control {
+    transition: border 0.3s ease-in, box-shadow 0.3s ease-in;
+    border: 1px solid #517eaf;
+    box-shadow: 0px 0px 15px #007eff;
+  }
+
+  .Select .Select-control {
+    box-shadow: none;
+    transition: border 0.3s ease-in, box-shadow 0.3s ease-in;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.09);
+    color: white;
+    border-radius: 4px !important;
+    .Select-arrow-zone {
+      display: none;
+    }
+    input {
+      color: white;
+    }
+    
+  }
+
+
+
+  .Select-input input {
+    padding-left: 20px;
+  }
+
+  .custom-link {
+    position: absolute;
+  }
+
+  h1 {
+    cursor: default;
+  }
+
+  h4 {
+    cursor: default;
+  }
+
+  p.description {
+    cursor: default;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  p.description em {
+    color: white;
+  }
+}
+
+.api-selected i {
+  float: right;
+}
+.api-selected {
+
+  height: 45px !important;
+  overflow: hidden;
+  text-align: left;
+  padding: 6px 10px;
+  border-radius: 3px;
+  background: white;
+  color: #696969;
+  border: 1px solid rgba(8, 18, 30, 0.33);
+  border-bottom: #CCC;
+  padding: 10px 26px;
+
+}
+.selected-apis {
+  margin-top: 2em;
+  text-align: left;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.animation-fade {
+  display: block;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.animation-fade.hidden {
+  display: none;
+}
+.ui.label {
+  min-width: 200px;
+  background: teal;
+  font-size: 12px;
+  display: inline-block;
+  padding: 1px 9px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+@-webkit-keyframes fadeIn { 
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+.api-selected-enter {
+  opacity: 0.01;
+}
+
+.api-selected-enter.api-selected-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.api-selected-leave {
+  opacity: 1;
+}
+
+.api-selected-leave.api-selected-leave-active {
+  opacity: 0.01;
+  height: 0px !important;
+  transition: height 100ms ease-in 130ms, opacity 200ms ease-in 0ms;
+}

@@ -25,10 +25,7 @@ export default class IndexPage extends Component {
     })
     this.state = {filteredAPI, status, upcomingMaintenances, components: [], incidents: []}
   }
-  componentWillMount () {
-  }
   componentDidMount () {
-    console.log('mount')
     this.state.filteredAPI.map(api => {
       window.fetch(`https://${api.code}.statuspage.io/api/v2/status.json`)
       .then((response) => {
@@ -153,7 +150,7 @@ export default class IndexPage extends Component {
                   indicator={this.state.status[api.name].status.indicator}
                   maintenances={this.state.upcomingMaintenances[api.name] || []}
                   selected={this.state.selected === api.name}
-                  select={(e) => { console.log(api.name); this.setState({selected: api.name}) }}
+                  select={(e) => { this.setState({selected: api.name}) }}
                 />
               )
             }

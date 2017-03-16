@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "next build",
-    "start": "node server",
-    "start-heroku": "npm run build && npm start",
     "dev": "node server",
+    "start-heroku": "NODE_ENV=production node server",
     "lint": "standard './pages/*' './containers/*'",
     "lint-fix": "standard --fix './pages/*' './containers/*'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "npm run build"
   },
   "standard": {
     "parser": "babel-eslint",
@@ -21,15 +21,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-module-resolver": "2.5.0",
+    "babel-plugin-wrap-in-js": "^1.1.0",
     "babel-register": "^6.23.0",
+    "fuse.js": "^2.6.2",
+    "fuzzysearch": "^1.0.3",
+    "glamor": "^2.20.24",
+    "glob": "7.1.1",
     "lzbase62": "^1.4.6",
-    "next": "^2.0.0-beta.36",
+    "next": "^2.0.0-beta.18",
     "next-routes": "^1.0.18",
+    "node-sass": "^4.5.0",
+    "raw-loader": "^0.5.1",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-select": "^1.0.0-rc.3",
-    "react-track": "^0.4.3",
-    "standard": "^9.0.0"
+    "react-select": "git+https://github.com/JedWatson/react-select.git",
+    "sass-loader": "^6.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
