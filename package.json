@@ -1,5 +1,5 @@
 {
-  "name": "aonyx",
+  "name": "aperture",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -22,7 +22,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-plugin-module-resolver": "2.5.0",
-    "babel-plugin-wrap-in-js": "^1.1.0",
+    "babel-plugin-wrap-in-js": "^1.1.1",
     "babel-register": "^6.23.0",
     "fuse.js": "^2.6.2",
     "fuzzysearch": "^1.0.3",
